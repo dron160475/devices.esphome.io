@@ -55,7 +55,7 @@ substitutions:
   device_name: sonoffthr316
 
 esphome:
-  name: $device_name
+  name: esp
   on_boot:
     - priority: 90
       then:
@@ -71,8 +71,8 @@ esp32:
   framework:
     type: esp-idf
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  ssid: "Keenetic-2790"
+  password: "160475160475"
   ap:
 captive_portal:
 
@@ -82,7 +82,7 @@ logger:
 
 api:
   encryption:
-    key: !secret api_encryption_key
+    key: jm1+/1TYMQN1FeDR4pNjOW052570TfF1lvMvUrMwZCc=
 
 ota:
   password: ""
@@ -97,7 +97,7 @@ time:
 
 sensor:
   - platform: wifi_signal
-    name: $friendly_name Wifi RSSI
+    name: grog
     update_interval: 60s
 
   - platform: uptime
